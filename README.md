@@ -7,12 +7,16 @@
 
 Auxilin Merge — is a tool to compose several components into one repository. 
 
-## Quick example
+## Usage
 
-Merge several repositories into one:
+1) Create/update file `release.yml` where specify needed versions of components.
+
+2) Run bash script to download and merge several repositories into one:
 ```bash
 $ bash git-merge.sh
 ```
+
+3) Push the resulting repository from the directory `temp_repos/auxilin` to GitHub.
 
 ## Change Log
 
