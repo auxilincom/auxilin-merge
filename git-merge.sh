@@ -196,9 +196,9 @@ changeDeployRepository() {
 cloneRepository $auxilinRepository
 
 echo "=== PARSE release.yml FILE ==="
-cd ./$auxilinPath
-eval $(parseYaml release.yml "config_")
 cd ../
+eval $(parseYaml release.yml "config_")
+cd ./temp_repos
 
 INCLUDE_API=$config_services_api_include;
 INCLUDE_WEB=$config_services_web_include;
