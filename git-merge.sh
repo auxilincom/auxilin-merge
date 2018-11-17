@@ -303,11 +303,11 @@ fi
 
 cd ./$auxilinPath
 
-# sed -i "1s/^/  5) deploy grafana version [$GRAFANA_VERSION](https:\/\/github.com\/paralect\/deploy-grafana\/releases\/tag\/$GRAFANA_VERSION)\n\n/" CHANGELOG.md
-sed -i "1s/^/  4) deploy drone version [$DRONE_VERSION](https:\/\/github.com\/paralect\/deploy-drone\/releases\/tag\/$DRONE_VERSION)\n\n/" CHANGELOG.md
-sed -i "1s/^/  3) web version [$WEB_VERSION](https:\/\/github.com\/paralect\/koa-react-starter\/releases\/tag\/$WEB_VERSION)\n/" CHANGELOG.md
-sed -i "1s/^/  2) landing version [$LANDING_VERSION](https:\/\/github.com\/paralect\/nextjs-landing-starter\/releases\/tag\/$LANDING_VERSION)\n/" CHANGELOG.md
-sed -i "1s/^/  1) api version [$API_VERSION](https:\/\/github.com\/paralect\/koa-api-starter\/releases\/tag\/$API_VERSION)\n/" CHANGELOG.md
+sed -i "1s/^/  5) deploy grafana version [$GRAFANA_VERSION](https:\/\/github.com\/auxilincom\/deploy-grafana\/releases\/tag\/$GRAFANA_VERSION)\n\n/" CHANGELOG.md
+sed -i "1s/^/  4) deploy drone version [$DRONE_VERSION](https:\/\/github.com\/auxilincom\/deploy-drone\/releases\/tag\/$DRONE_VERSION)\n\n/" CHANGELOG.md
+sed -i "1s/^/  3) web version [$WEB_VERSION](https:\/\/github.com\/auxilincom\/koa-react-starter\/releases\/tag\/$WEB_VERSION)\n/" CHANGELOG.md
+sed -i "1s/^/  2) landing version [$LANDING_VERSION](https:\/\/github.com\/auxilincom\/nextjs-landing-starter\/releases\/tag\/$LANDING_VERSION)\n/" CHANGELOG.md
+sed -i "1s/^/  1) api version [$API_VERSION](https:\/\/github.com\/auxilincom\/koa-api-starter\/releases\/tag\/$API_VERSION)\n/" CHANGELOG.md
 sed -i "1s/^/* New release of auxilin with the following components:\n/" CHANGELOG.md
 
 releaseDate=`date '+%B %d, %Y'`;
