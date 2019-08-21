@@ -138,7 +138,7 @@ copyFileToAuxilin() {
 
 copyStagingEnvironmentFile() {
   echo "=== COPY STAGING ENVIRONMENT FILE ==="
-  cp ../staging.js "./$1/$2/staging.js"
+  cp "../config/staging-$3.js" "./$1/$2/staging.js"
   echo "=== DONE COPY STAGING ENVIRONMENT FILE ==="
 }
 
@@ -181,7 +181,7 @@ regeneratePackageLock() {
 
 changeRepository() {
   repositoryActions2 $1 $2 $3 filesToRemove[@]
-  copyStagingEnvironmentFile "$1/$3" $4
+  copyStagingEnvironmentFile "$1/$3" $4 $3
   regeneratePackageLock "$1/$3"
   copyFileToAuxilin $1 $3 ""
   commitFiles $1 $2
