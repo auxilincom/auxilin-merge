@@ -1,9 +1,9 @@
 services:
   auxilin:
-    version: 0.6.3
+    version: 0.6.4
   api:
-    version: 0.6.1
-    include: false
+    version: 0.6.2
+    include: true
   web:
     version: 0.7.0
     include: false
