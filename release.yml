@@ -1,15 +1,15 @@
 services:
   auxilin:
-    version: 0.6.4
+    version: 0.7.0
   api:
-    version: 0.6.2
+    version: 0.6.3
     include: true
   web:
-    version: 0.7.0
-    include: false
+    version: 0.8.0
+    include: true
   landing:
-    version: 0.7.2
-    include: false
+    version: 0.7.3
+    include: true
   drone:
     version: 1.5.1
     include: false
